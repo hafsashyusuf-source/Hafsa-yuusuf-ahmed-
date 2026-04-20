@@ -1,112 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Delicious Food</title>
+<meta charset="UTF-8">
+<title>Fashion Shop - Home</title>
 
-    <style>
-        /* Universal Selector */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+body { font-family: Arial; margin:0; }
 
-        /* Body */
-        body {
-            font-family: Arial, sans-serif;
-        }
+header {
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
 
-        /* ID Selector */
-        #logo {
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 15px;
-        }
+nav ul {
+  list-style:none;
+  background:#eee;
+  text-align:center;
+  padding:10px;
+  margin:0;
+}
 
-        /* Class Selector */
-        .special {
-            color: hsl(0, 100%, 50%);
-            background-color: rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            margin: 10px 0;
-        }
+nav li { display:inline; }
 
-        /* Descendant Selector */
-        nav a {
-            color: green;
-            text-decoration: none;
-            margin: 10px;
-        }
+nav a {
+  text-decoration:none;
+  color:black;
+  margin:10px;
+  font-weight:bold;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 10px;
-            background: #eee;
-            text-align: center;
-        }
+main { padding:20px; }
 
-        nav li {
-            display: inline;
-        }
+.offer {
+  background:pink;
+  padding:10px;
+  margin:10px 0;
+}
 
-        main {
-            padding: 20px;
-        }
+footer {
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:10px;
+}
+</style>
 
-        .box {
-            float: right;
-            padding: 10px;
-            background: #ddd;
-            margin: 10px;
-        }
-
-        footer {
-            background-color: rgb(200, 200, 200);
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header id="logo">
-        <h1 style="color:red;">🍽 Delicious Food</h1>
-    </header>
+<header>
+<h1>👗 Fashion Shop</h1>
+</header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-        </ul>
-    </nav>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+</ul>
+</nav>
 
-    <!-- Main Content -->
-    <main>
-        <h2>Welcome to our Restaurant</h2>
+<main>
+<h2>Welcome</h2>
 
-        <p class="special">🔥 Today Offer: Free Drink with any meal!</p>
+<p class="offer">🔥 Big Sale 50% OFF!</p>
 
-        <h3>Top 3 Meals</h3>
-        <ol>
-            <li>Chicken Rice</li>
-            <li>Fish & Chips</li>
-            <li>Spaghetti</li>
-        </ol>
+<h3>Trending</h3>
+<ol>
+<li>Dresses</li>
+<li>Jackets</li>
+<li>Shoes</li>
+</ol>
+</main>
 
-        <div class="box">
-            <p><b>Open:</b> 8AM - 10PM</p>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Delicious Food</p>
-    </footer>
+<footer>
+<p>© 2026 Fashion Shop</p>
+</footer>
 
 </body>
 </html>
