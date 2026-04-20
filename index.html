@@ -1,35 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Hospital - Home</title>
+    <meta charset="UTF-8">
+    <title>Delicious Food</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* ID Selector */
+        #logo {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Class Selector */
+        .special {
+            color: hsl(0, 100%, 50%);
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Descendant Selector */
+        nav a {
+            color: green;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 10px;
+            background: #eee;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .box {
+            float: right;
+            padding: 10px;
+            background: #ddd;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: rgb(200, 200, 200);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body style="background-color: #f4f4f4; font-family: Arial;">
 
-<header style="background: darkred; color: white; padding: 15px; text-align: center;">
-  <h1 style="margin:0;">City Hospital</h1>
-</header>
+<body>
 
-<nav style="background: gray; padding: 10px; text-align:center;">
-  <a href="index.html" style="margin:10px; color:white;">Home</a>
-  <a href="about.html" style="margin:10px; color:white;">About</a>
-  <a href="services.html" style="margin:10px; color:white;">Services</a>
-  <a href="contact.html" style="margin:10px; color:white;">Contact</a>
-</nav>
+    <!-- Header -->
+    <header id="logo">
+        <h1 style="color:red;">🍽 Delicious Food</h1>
+    </header>
 
-<main style="padding:20px;">
-  <h2>Welcome to Our Hospital</h2>
-  <p>We provide quality healthcare services for everyone.</p>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
 
-  <h3>Our Mission</h3>
-  <ul>
-    <li>Quality Treatment</li>
-    <li>Patient Care</li>
-  </ul>
-</main>
+    <!-- Main Content -->
+    <main>
+        <h2>Welcome to our Restaurant</h2>
 
-<footer style="background:darkred; color:white; text-align:center; padding:10px;">
-  <p>© 2026 City Hospital</p>
-</footer>
+        <p class="special">🔥 Today Offer: Free Drink with any meal!</p>
+
+        <h3>Top 3 Meals</h3>
+        <ol>
+            <li>Chicken Rice</li>
+            <li>Fish & Chips</li>
+            <li>Spaghetti</li>
+        </ol>
+
+        <div class="box">
+            <p><b>Open:</b> 8AM - 10PM</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Delicious Food</p>
+    </footer>
 
 </body>
 </html>
