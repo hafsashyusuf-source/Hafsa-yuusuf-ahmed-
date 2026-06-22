@@ -1,83 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Fashion Shop - Home</title>
+    <title> restaurant food </title>
 
-<style>
-body { font-family: Arial; margin:0; }
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f5f5f5;
+            padding: 40px;
+        }
 
-header {
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
+        h1{
+            margin-bottom: 40px;
+        }
 
-nav ul {
-  list-style:none;
-  background:#eee;
-  text-align:center;
-  padding:10px;
-  margin:0;
-}
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
 
-nav li { display:inline; }
+        .card{
+            width: 220px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
 
-nav a {
-  text-decoration:none;
-  color:black;
-  margin:10px;
-  font-weight:bold;
-}
+        .card img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid green;
+            object-fit: cover;
+        }
 
-main { padding:20px; }
+        .card h2{
+            color: green;
+        }
 
-.offer {
-  background:pink;
-  padding:10px;
-  margin:10px 0;
-}
-
-footer {
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:10px;
-}
-</style>
-
+        .card p{
+            color: gray;
+        }
+    </style>
 </head>
-
 <body>
+ <h1> restaurant food </h1>
 
-<header>
-<h1>👗 Fashion Shop</h1>
-</header>
+    <div class="gallery">
 
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="menu.html">Menu</a></li>
-</ul>
-</nav>
+        <div class="card">
+            <img src="americano.jpg" ="">
+            <h2>Americano coffe</h2>
+            <p>Americano waxaa lagu sameeyaa espresso lagu daray biyo kulul. Wuxuu ka fudud yahay espresso laakiin weli wuxuu leeyahay dhadhanka qaxwaha.</p>
+        </div>
 
-<main>
-<h2>Welcome</h2>
+        <div class="card">
+            <img src="flat white.jpg" alt="">
+            <h2>flat white coffee</h2>
+            <p>Flat White wuxuu ka kooban yahay espresso iyo caano si fiican loo uumiyey. Wuxuu la mid yahay latte laakiin caanuhu way ka yar yihiin.</p>
+        </div>
 
-<p class="offer">🔥 Big Sale 50% OFF!</p>
+        <div class="card">
+            <img src="latte.jpg"alt="">
+            <h2>latte coffee </h2>
+            <p>Latte waa espresso lagu daray caano badan iyo xumbo yar. Waa qaxwo khafiif ah oo dad badan jecel yihiin.</p>
+        </div>
 
-<h3>Trending</h3>
-<ol>
-<li>Dresses</li>
-<li>Jackets</li>
-<li>Shoes</li>
-</ol>
-</main>
+        <div class="card">
+            <img src="mocha.jpg" alt="">
+            <h2>mocha coffee</h2>
+            <p>Mocha waa isku darka espresso, caano, iyo shukulaato. Wuxuu leeyahay dhadhan macaan oo qaxwo iyo shukulaato isugu jira.</p>
+        </div>
 
-<footer>
-<p>© 2026 Fashion Shop</p>
-</footer>
+        <div class="card">
+            <img src="macchiato.jpg" alt="">
+            <h2>macchiato coffee</h2>
+            <p>Macchiato waa espresso lagu daray xumbo caano yar. Wuxuu leeyahay dhadhan qaxwo oo xooggan</p>
+        </div>
 
+        <div class="card">
+            <img src="turkish.jpg" alt="">
+            <h2>turkish coffee</h2>
+            <p>Turkish Coffee waa qaxwo dhaqameed si gaar ah loo kariyo iyadoo budada qaxwaha si toos ah biyaha loogu dhex kariyo. Wuxuu leeyahay dhadhan xooggan iyo caraf gaar ah.</p>
+        </div>
+
+        <div class="card">
+            <img src= "espresso.jpg" alt="">
+            <h2>espresso coffee </h2>
+            <p>Espresso waa qaxwo xooggan oo laga sameeyo biyo kulul oo cadaadis lagu mariyo budada qaxwaha. Waa saldhigga noocyo badan oo coffee ah</p>
+        </div>
+
+        <div class="card">
+            <img src="cappuccino.jpg" alt="">
+            <h2>cappuccino coffee </h2>
+            <p>Cappuccino wuxuu ka kooban yahay espresso, caano kulul, iyo xumbo caano. Wuxuu leeyahay dhadhan dheellitiran oo jilicsan.</p>
+            </div>
+     <audio controls>
+         <source src="audio.mp3" type="audio/mp3"/>
+     </audio>
 </body>
 </html>
