@@ -1,27 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
-  font-family: Arial;
-  background-color: lightgray;
+    background-color: #f4b7f6;
+    color: #333;
+    line-height: 1.6;
 }
-
-header, footer {
-  background: darkred;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
 nav {
-  background: gray;
-  text-align: center;
-  padding: 10px;
+    background-color: #0284c7;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
 }
 
-main {
-  padding: 20px;
+nav a:hover {
+    background-color: #38bdf8;
+    color: #1e293b;
+}
+section {
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: beige;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+section div {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 5px solid #38bdf8;
+}
+
+section div h2 {
+    text-align: left;
+    color: #0284c7;
+    font-size: 1.5rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    border-left: none; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #38bdf8;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #334155;
+}
+
+input[type="text"],
+input[type="Tell"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #38bdf8;
+    background-color: #fff;
+}
+input[type="radio"] {
+    margin-right: 8px;
+    margin-top: 10px;
+}
+footer {
+    background-color:olive;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 8px;
+    font-size: 14px;}
+.table-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-top: 30px;
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Waxay meesha ka saaraysaa xariiqyada dhexda ee is-dul saaran */
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+table th {
+    background-color: #0f172a; /* Midabka madaxa jadwalka (madow xarago leh) */
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+table tbody tr:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.2s ease;
 }

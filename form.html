@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT TECH</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Registration</legend>
+            <label for="fullnmae">full Name:</label><br>
+            <input type="text" name="fullnmae" id="fullname" placeholder="Enter full name">
+            <p>
+            <label for="phone">phone:</label><br>
+            <input type="Tell" name="phone" id="phone" placeholder="Enter phone">
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" name="Email" id="Email" placeholder="Enter Email@.com">
+            </p>
+            <label for="male">choose your gender</label><br>
+            <input type="radio" name="gender" id="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">female</label><br>
+            <p>
+                <h2>choose  Your District</h2>
+                <select name="District" id="District" multiple>
+                    <option value="select">select</option>
+                    <option value="kaxda">kaxda</option>
+                    <option value="wartanabda">wartanabda</option>
+                    <option value="Hodan">Hodan</option>
+                    <option value="yaqshid">yaqshid</option>
+                </select><br><br>
+                <h2>choose your services</h2>
+                <input list="services">
+                <datalist id="services">
+                    <option value="multmedia">multmedia</option>
+                    <option value="mobileApps">mobile Apps</option>
+                    <option value="webdeveloper"></option>
+                </datalist>
+            </p>
+            <h2>choose your comment</h2>
+            <label for="comment">choose your comment</label><br>
+            <textarea name="comment" id="comment" cols="0.9" rows="10" maxlength="100" placeholder="Enter your comment"></textarea><br><br>
+            <input type="submit" name="send" id="send" value="save Data">&nbsp;&nbsp;
+            <input type="resent" name="clear" id="clear" value="clear form data">
+        </fieldset>
+    </form>
+</body>
+</html>
